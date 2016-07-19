@@ -1,0 +1,27 @@
+
+html, body {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+body {
+  background-size: cover;
+  background: url("https://media.giphy.com/media/3oFyCZm9jPjlzsAwXS/giphy.gif") center; }
+
+h1 {
+  font-family: monospace;
+  text-transform: uppercase;
+  border: 5px solid white;
+  padding: 0.5em;
+  color: #fff;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/*# sourceMappingURL=app.css.map */
