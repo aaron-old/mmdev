@@ -1,45 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('layouts.master')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+@section('content')
+    <div id="wrapper">
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+        <div id="side">
+            <div class="circle"></div>
+            <h1>Aaron Young </h1>
+            <p>Full Stack Developer</p>
+            <div class="nav"></div>
+            <div></div>
+        </div>
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+        <div class="bg"></div>
+        @include('layouts.navigation')
+        <div id="main" class="container-fluid">
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
+            <div class="main-content">
             </div>
         </div>
-    </body>
-</html>
+    </div>
+@endsection
