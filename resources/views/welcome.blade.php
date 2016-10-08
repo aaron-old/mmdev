@@ -14,7 +14,6 @@
         <div class="bg"></div>
         @include('layouts.navigation')
         <div id="main" class="container-fluid">
-
             <div class="main-content">
             </div>
         </div>

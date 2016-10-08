@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url(http://weloveiconfonts.com/api/?family=fontawsome);
+
+$breakPoint: 40em;
+$displayPoint:40.01em;
+
+$navBackground:transparentize(#313131, .15);
+$itemHover:transparentize(#222, .45);
+$linkColor: #ccc;
+
+[class*="fontawesome"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+body {
+  font-family: lato;
+}
+
+#nav {
+  width: 85%;
+  background: $navBackground;
+  margin: 2em auto 0;
+  border-radius: .25em;
+  overflow:auto;
+
+  @media (max-width: $breakPoint) {
+    width: 95%;
+  }
+
+  .clickr {
+    color: $linkColor;
+    display:block;
+    text-align: right;
+    padding: .5em;
+    font-size: 1.25em;
+    display:none;
+
+    @media(max-width:$breakPoint) {
+      display:block;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+
+    @media(max-width:$breakPoint){
+      flex-direction: column;
+      display:none;
+    }
+
+    li {
+      list-style: none;
+      align-items: stretch;
+      flex:1;
+      text-align: center;
+
+      &:first-child a {
+        border-left: none;
+      }
+
+      &:last-child a {
+        border-right: none;
+      }
+
+      &:active a {
+        background: $itemHover;
+        border-bottom: 1px solid teal;
+      }
+
+      a {
+        color: $linkColor;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 0 1px 1px #000;
+        font-weight: 200;
+        padding: 1em 0;
+        display:block;
+        border-right: 1px solid transparentize(black, .7);
+        border-left: 1px solid transparentize(white, .90);
+
+        @media (max-width:$breakPoint) {
+          border-top:1px solid transparentize(black, .70);
+          border-bottom: 1px solid transparentize(white, .90);
+        }
+
+        &:hover {
+          background: $itemHover;
+          border-bottom: 1px solid tomato;
+        }
+      }
+    }
+  }
+}
+
+.text {
+  color: #fff;
+  font-weight: 200;
+  text-align:center;
+
+  h1 {
+    font-weight: 200;
+    text-transform: uppercase;
+    text-shadow: 0 10px 0 transparentize(#000, .85);
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
