@@ -24,18 +24,23 @@ elixir(function(mix) {
         'bootstrap.min.css'
     ], 'public/css/bootstrap.css', 'node_modules/bootstrap/dist/css');
 
-    mix.babel([
+    mix.scripts([
         'jquery.min.js'
     ], 'public/js/jquery.js', 'node_modules/jquery/dist/');
 
-    mix.babel([
+    mix.scripts([
         'bootstrap.min.js'
     ], 'public/js/bootstrap.js', 'node_modules/bootstrap/dist/js/');
+
+    mix.scripts([
+        'main.js'
+    ], 'public/js/main-production.js', 'resources/assets/js/');
 
     mix.version([
         'public/css/app.css',
         'public/css/bootstrap.css',
         'public/js/jquery.js',
-        'public/js/bootstrap.js'
+        'public/js/bootstrap.js',
+        'public/js/main-production.js'
     ]);
 });

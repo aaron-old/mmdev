@@ -1,6 +1,7 @@
 {
   "css/app.css": "css/app-0d71239b90.css",
   "css/bootstrap.css": "css/bootstrap-dbab3c6a95.css",
-  "js/bootstrap.js": "js/bootstrap-b732eb9b63.js",
-  "js/jquery.js": "js/jquery-11f787a835.js"
+  "js/bootstrap.js": "js/bootstrap-46b9e7c174.js",
+  "js/jquery.js": "js/jquery-3d6f469808.js",
+  "js/main-production.js": "js/main-production-5dbd1b93c6.js"
 }

@@ -13,6 +13,8 @@
     <script src="{{elixir('js/jquery.js')}}"></script>
     <script src="{{elixir('js/bootstrap.js')}}"></script>
 
+    <script src="{{elixir('js/main-production.js')}}"></script>
+
 </head>
 <body>
     <div id="main">

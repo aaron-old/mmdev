@@ -14,3 +14,4 @@ MMDEV.Main = (function () {
 $(document).ready(function () {
    alert('jquery');
 });
+//# sourceMappingURL=main-production.js.map
